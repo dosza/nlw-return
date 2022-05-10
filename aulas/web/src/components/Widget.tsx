@@ -4,13 +4,13 @@ import { useState } from 'react'
 export function Widget() {
     const [isWidgetOpen, setIsWidgetOpen] = useState(false)
 
-    function toggleWidgetVisibility(){
+    function toggleWidgetVisibility() {
         setIsWidgetOpen(!isWidgetOpen)
     }
 
     return (
         <div className='absolute bottom-5 right-5'>
-            { isWidgetOpen &&  <p>Hello World!!!</p>  }
+            {isWidgetOpen && <p>Hello World!!!</p>}
             <button onClick={toggleWidgetVisibility} className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group'>
 
                 <ChatTeardropDots className='w-6 h-6' />
