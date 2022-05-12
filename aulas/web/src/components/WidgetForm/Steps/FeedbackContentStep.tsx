@@ -12,7 +12,6 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequest }: 
     const feedbackTypeInfo = feedbackTypes[feedbackType]
     const [screenshot, setScreenshot] = useState<string | null>(null)
 
-
     return (
         <>
             <header>
@@ -43,6 +42,8 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequest }: 
                 <footer className='flex gap-2 mt-2'>
                     <ScreenshotButton
                         onScreenshotTook={setScreenshot}
+                        screenshot={screenshot}
+            
                     />
 
                     <button
