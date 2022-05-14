@@ -11,10 +11,8 @@ app.post('/feedbacks', async (req, res) => {
             comment,
             screenshot
         }
-    }) 
-    return res.status(201).json({
-        data: feedback
     })
+    return res.status(201).json({ data: feedback })
 })
 app.listen(3333, () => {
     console.log('HTTP server running')
