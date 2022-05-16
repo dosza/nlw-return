@@ -41,7 +41,7 @@ describe('Submit feedback', () => {
         })).rejects.toThrow()
     })
 
-    it('should not be able to submit a feedback without invalid screenshot', async() => {
+    it('should not be able to submit a feedback with invalid screenshot', async() => {
 
         await expect(submitFeeback.execute({
             type: 'BUG',
