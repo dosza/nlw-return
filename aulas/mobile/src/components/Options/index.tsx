@@ -9,7 +9,7 @@ import { styles } from './styles';
 export function Options() {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>
+            <Text style={styles.title }>
                 Deixe seu Feedback 
             </Text>
 
