@@ -8,8 +8,8 @@ import { FeedbackType } from '../Widget';
 import { feedbackTypes } from '../../utils/feedbackTypes'
 import { ScreenshotButton } from '../ScreenshotButton';
 import { Button } from '../Button';
-import { Success } from '../Success';
 import { captureScreen, } from 'react-native-view-shot'
+import { api } from '../../libs/api'
 interface Props {
     feedbackType: FeedbackType;
     onFeedbackCanceled: () => void;
@@ -18,7 +18,8 @@ interface Props {
 
 export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props) {
     const [screenshot, setScreenshot] = useState<string | null>(null)
-
+    const [isSendingFeedback, setIsSendingFeedback] = useState(false)
+    const [comment, setComment] = useState('')
     const feedbackTypeInfo = feedbackTypes[feedbackType]
 
     function handleScreenshot() {
@@ -33,6 +34,32 @@ export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props
     function handleScreenshotRemove() {
         setScreenshot(null)
     }
+
+    async function handleSendFeedback() {
+        if (isSendingFeedback) {
+            return;
+        }
+
+        setIsSendingFeedback(true)
+
+        try {
+            await api.post('/feedbacks', {
+                type: feedbackType,
+                screenshot: screenshot,
+                comment: comment,
+            })
+
+            onFeedbackSent()
+
+        } catch (error) {
+            console.log(error)
+            setIsSendingFeedback(false)
+        }
+
+    }
+
+
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -66,6 +93,7 @@ export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props
                 }
                 placeholderTextColor={theme.colors.text_secondary}
                 autoCorrect={false}
+                onChangeText={setComment}
             />
             <View style={styles.footer}>
                 <ScreenshotButton
@@ -74,7 +102,8 @@ export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props
                     screenshot={screenshot}
                 />
                 <Button
-                    isLoading={false}
+                    isLoading={isSendingFeedback}
+                    onPress={handleSendFeedback}
                 />
 
             </View>
