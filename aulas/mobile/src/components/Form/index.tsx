@@ -65,6 +65,7 @@ export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props
                     'Conte com detalhes o que está acontecendo...'
                 }
                 placeholderTextColor={theme.colors.text_secondary}
+                autoCorrect={false}
             />
             <View style={styles.footer}>
                 <ScreenshotButton
