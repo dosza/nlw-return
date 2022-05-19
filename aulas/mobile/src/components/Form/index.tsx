@@ -9,6 +9,7 @@ import { feedbackTypes } from '../../utils/feedbackTypes'
 import { ScreenshotButton } from '../ScreenshotButton';
 import { Button } from '../Button';
 import { captureScreen, } from 'react-native-view-shot'
+import * as FileSystem from 'expo-file-system'
 import { api } from '../../libs/api'
 interface Props {
     feedbackType: FeedbackType;
@@ -41,11 +42,12 @@ export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props
         }
 
         setIsSendingFeedback(true)
+        const screenshotBase64 =  screenshot &&  await FileSystem.readAsStringAsync(screenshot, {encoding: 'base64'})
 
         try {
             await api.post('/feedbacks', {
                 type: feedbackType,
-                screenshot: screenshot,
+                screenshot: `data:image/png;base64, ${screenshotBase64}`,
                 comment: comment,
             })
 
