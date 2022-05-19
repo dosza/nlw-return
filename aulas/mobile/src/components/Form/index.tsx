@@ -19,16 +19,16 @@ export function Form({ feedbackType }: Props) {
 
     const feedbackTypeInfo = feedbackTypes[feedbackType]
 
-    function handleScreenshot(){
+    function handleScreenshot() {
         captureScreen({
             format: 'png',
             quality: 0.8,
         })
-        .then( uri=> setScreenshot(uri))
-        .catch(error=> console.log(error))
+            .then(uri => setScreenshot(uri))
+            .catch(error => console.log(error))
     }
 
-    function handleScreenshotRemove(){
+    function handleScreenshotRemove() {
         setScreenshot(null)
     }
     return (
