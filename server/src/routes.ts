@@ -6,6 +6,14 @@ import { NodemailerMailAdapter } from './adapters/nodemailer/nodemailerMailAdapt
 
 export const routes = express.Router()
 
+routes.get('/', async (req, res) => {
+    return res.status(200).json({
+        title: "Hello World !!",
+        message: ["Welcome to Widget Feedback  API rest!!",
+            "Read more about API on https://github.com/dosza/nlw-return#api-rest"
+        ]
+    })
+})
 routes.post('/feedbacks', async (req, res) => {
 
     const { type, comment, screenshot } = req.body;
