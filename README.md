@@ -62,7 +62,7 @@ Para este projeto foi utilizado:
 
 ## Configuração de banco de dados ##
 
-Arquivo de configuração do [prisma:](https://github.com/dosza/nlw-return/blob/mains/server/prisma/schema.prisma)
+Arquivo de configuração do [prisma:](https://github.com/dosza/nlw-return/blob/main/server/prisma/schema.prisma)
 Nesse arquivo é possível trocar o servidor de banco de dados alterando  o valor de *provider*
 Leia a documentação do [Prisma Scheme](https://pris.ly/d/prisma-schema) para saber mais!
 
@@ -136,8 +136,15 @@ screenshot        | string  | 'data:image/png;base64, '
 Deploy 💻️
 ---
 Link do deploy [Feedback Widget Frontend](https://nlw-return-gules.vercel.app)<br/>
-Link do deploy [Feedback Backend](https://nlw-return-production-ca43.up.railway.app)
+Link do deploy [Feedback Widget Backend](https://nlw-return-production-ca43.up.railway.app)
 
 
 Desafios 🏆️
 ---
+
+1.	Adicionar tema light/dark
+2.	Substituir o Mailtrap por um serviço de e-mail real,
+3.	Melhorar HTML/CSS do e-mail
+4.	Criar um dashboard de Feedbacks
+	a.	Autenticação com (Firebase/Auth)
+
