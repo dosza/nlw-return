@@ -135,7 +135,7 @@ screenshot        | string  | 'data:image/png;base64, '
 
 Deploy 💻️
 ---
-Link do deploy [Feedback Widget Frontend](https://nlw-return-2e12h73l2-danieloliveirasouza.vercel.app/)
+Link do deploy [Feedback Widget Frontend](https://nlw-return-2e12h73l2-danieloliveirasouza.vercel.app/)<br/>
 Link do deploy [Feeback Backend](https://nlw-return-production-ca43.up.railway.app)
 
 
