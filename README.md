@@ -62,7 +62,7 @@ Para este projeto foi utilizado:
 
 ## Configuração de banco de dados ##
 
-Arquivo de configuração do [prisma:](https://github.com/dosza/nlw-return/blob/main/aulas/server/prisma/schema.prisma)
+Arquivo de configuração do [prisma:](https://github.com/dosza/nlw-return/blob/mains/server/prisma/schema.prisma)
 Nesse arquivo é possível trocar o servidor de banco de dados alterando  o valor de *provider*
 Leia a documentação do [Prisma Scheme](https://pris.ly/d/prisma-schema) para saber mais!
 
