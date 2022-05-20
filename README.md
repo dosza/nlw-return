@@ -117,7 +117,7 @@ http://localhost:3333/feeedbacks
 
 Parâmetros | Tipo| Valor
 -----------|-----------|-----------
-type 		        | string  | 'BUG'
+type 		        | string  | 'BUG' \| 'IDEA' \| 'OTHER'
 comment              | string  | 'Não funciona'
 screenshot        | string  | 'data:image/png;base64, '
 
@@ -131,12 +131,12 @@ screenshot        | string  | 'data:image/png;base64, '
 **Retorno Status:**
 
 +	201 para sucesso
-+	500 para erro
++	500 para erro no servidor
 
 Deploy 💻️
 ---
 Link do deploy [Feedback Widget Frontend](https://nlw-return-gules.vercel.app)<br/>
-Link do deploy [Feeback Backend](https://nlw-return-production-ca43.up.railway.app)
+Link do deploy [Feedback Backend](https://nlw-return-production-ca43.up.railway.app)
 
 
 Desafios 🏆️
