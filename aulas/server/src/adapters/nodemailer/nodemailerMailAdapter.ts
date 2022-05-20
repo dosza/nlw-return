@@ -1,5 +1,7 @@
 import { MailAdapter, SendMailData } from "../mailAdapter";
-import { transport } from "../../transport";
+import nodemailer from 'nodemailer'
+
+const transport = nodemailer.createTransport(process.env.MAILSERVER_URL)
 export class NodemailerMailAdapter implements MailAdapter {
     async sendMail({subject,body}: SendMailData) {
         await transport.sendMail({
@@ -10,3 +12,4 @@ export class NodemailerMailAdapter implements MailAdapter {
         })
     }
 }
+
