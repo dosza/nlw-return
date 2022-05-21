@@ -62,7 +62,7 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequest, on
                 onSubmit={handleSubmitFeedback}
             >
                 <textarea
-                    className='min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-primary-light dark:text-primary-dark border-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none scrollbar hover:scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin'
+                    className='min-w-[304px] w-full min-h-[112px] text-sm placeholder-secondary-light dark:placeholder-zinc-400 text-primary-light dark:text-primary-dark dark:border-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none scrollbar hover:scrollbar-thumb-stroke-light dark:hover:scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin'
                     placeholder='Conte com detalhes o que está acontecendo...'
                     onChange={event => setCommentFeedback(event.target.value)}
                 />
