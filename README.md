@@ -101,8 +101,7 @@ user@pc:~$ cd server
 user@pc:~$ #configuração de dependencias
 user@pc:~$ npm
 user@pc:~$ #executa a migração em modo desenvolvimento
-user@pc:~$ npm run migrateDev 
-user@pc:~$
+user@pc:~$ npm run migrateDev
 ```
 **Dica:** Para executar as *migrations* em produção basta executar:
  ```bash
