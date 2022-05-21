@@ -17,13 +17,14 @@ Consulte  *[tutorial](https://efficient-sloth-d85.notion.site/Instalando-o-Node-
 + React JS
 + React Native
 + TypeScript
++ TailwindCSS
++ Prisma
++ Jest
 + PostgreSQL 
 
 Layout 📌️
 ---
 Link para [layout](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget) feito no Figma<br/>
-Versão [desktop](https://www.figma.com/community/file/1102912516166573468)<br/>
-Versão [mobile](https://www.figma.com/community/file/1102912516166573468)
 
 Getting Started! 🚀️
 ---
@@ -62,7 +63,7 @@ Para este projeto foi utilizado:
 
 ## Configuração de banco de dados ##
 
-Arquivo de configuração do [prisma:](https://github.com/dosza/nlw-return/blob/main/server/prisma/schema.prisma)
+Arquivo de configuração do [Prisma Scheme](/server/prisma/schema.prisma)
 Nesse arquivo é possível trocar o servidor de banco de dados alterando  o valor de *provider*
 Leia a documentação do [Prisma Scheme](https://pris.ly/d/prisma-schema) para saber mais!
 
@@ -94,8 +95,8 @@ MAILSERVER_URL="smtp://user:password@smtp.mailtrap.io:2525"
 user@pc:~$ cd server
 user@pc:~$ #configuração de dependencias
 user@pc:~$ npm
-user@pc:~$ #Inicialização da aplicação web
-user@pc:~$ npm run migrateDev # executa a migração em modo desenvolvimento
+user@pc:~$ #executa a migração em modo desenvolvimento
+user@pc:~$ npm run migrateDev 
 user@pc:~$
 ```
 **Dica:** Para executar as *migrations* em produção basta executar:
@@ -106,7 +107,7 @@ npm run migrateProd
 Inicializando o servidor Web
 ```console
 user@pc:~$ cd server
-user@pc:~$ #Inicialização da aplicação web
+user@pc:~$ #Inicialização Backend em modo desenvolvimento
 user@pc:~$ npm run dev
 ```
 
@@ -148,9 +149,9 @@ Deploy 💻️
 Desafios 🏆️
 ---
 
-1.	Adicionar tema light/dark
-2.	Substituir o Mailtrap por um serviço de e-mail real,
-3.	Melhorar HTML/CSS do e-mail
-4.	Criar um dashboard de Feedbacks
-	1.	Autenticação com (Firebase/Auth)
+-	[x]	Adicionar tema light/dark 
+-	[ ]	Substituir o Mailtrap por um serviço de e-mail real,
+-	[ ]	Melhorar HTML/CSS do e-mail
+-	[ ]	Criar um dashboard de Feedbacks
+	-	[ ]	Autenticação com (Firebase/Auth)
 
