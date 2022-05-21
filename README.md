@@ -35,9 +35,11 @@ user@pc:~$ git clone https://github.com/dosza/nlw-return
 ```
 
 
-## Configurando as variáveis de ambiente na aplicação WEB ##
+## Configurando as variáveis de ambiente para o Frontend ##
 
 Crie o arquivo .env.local  em [/web](web), nesse arquivo defina a variável *VITE_API_URL="http://localhost:3333"* ou com endereço IP de sua máquina!
+
+### Exemplo de arquivo web/.env.local ###
 
 ```env
 VITE_API_URL="http://192.168.1.2:3333"
@@ -61,10 +63,11 @@ Para este projeto foi utilizado:
 
 
 
-## Configuração de banco de dados ##
+### Configuração de banco de dados ###
 
-Arquivo de configuração do [Prisma Scheme](/server/prisma/schema.prisma)
+Arquivo de configuração do [Prisma Scheme](/server/prisma/schema.prisma)<br/>
 Nesse arquivo é possível trocar o servidor de banco de dados alterando  o valor de *provider*
+
 Leia a documentação do [Prisma Scheme](https://pris.ly/d/prisma-schema) para saber mais!
 
 
@@ -75,7 +78,7 @@ Leia a documentação do [Prisma Scheme](https://pris.ly/d/prisma-schema) para s
 	}
 ````
 
-### Configurando as variáveis de ambiente do projeto ###
+#### Configurando as variáveis de ambiente do Backend ####
 Crie o arquivo .env em [/server](server)
 
 Nesse arquivo deverá conter as variáveis:
@@ -84,13 +87,15 @@ Nesse arquivo deverá conter as variáveis:
 
 **Dica:** substitua seu usuário e senha, caso esteja utitilizando maitrap e o postgresql!!
 
+#### Exemplo de arquivo server/.env ####
+
 ```env
 DATABASE_URL="postgresql://user:password@localhost:5432/mydb?schema=db"
 MAILSERVER_URL="smtp://user:password@smtp.mailtrap.io:2525"
 
 ```
 
-### Executando as Migrations ###
+#### Executando as Migrations ####
 ```console
 user@pc:~$ cd server
 user@pc:~$ #configuração de dependencias
@@ -116,7 +121,7 @@ user@pc:~$ npm run dev
 Versão: v0.1.0<br/>
 Esta API recebe os feedbacks.<br/>Implementa ações com o método POST
 
-### Método POST
+### Método POST ###
 1.  Enviar Feeback
 
 http://localhost:3333/feeedbacks
