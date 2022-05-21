@@ -3,12 +3,12 @@
 </p>
 
 
-<h1 align="center">Next Level Week Return </h1>
+<h1 align="center">Next Level Week Return - Trilha Impulse</h1>
 
 
 Um Projeto desenvolvido na Semana *[Next Level Week \#8](https://nextlevelweek.com)* da *[Rocketseat](https://rocketseat.com.br/)*
 
-[Feedback Widget](https://efficient-sloth-d85.notion.site/Impulse-58f2daadb8e1433894420cbc57571087)
+[Widget Feedback](https://efficient-sloth-d85.notion.site/Impulse-58f2daadb8e1433894420cbc57571087)
 
 Tecnologias usadas 💻️
 ---
@@ -21,7 +21,9 @@ Consulte  *[tutorial](https://efficient-sloth-d85.notion.site/Instalando-o-Node-
 
 Layout 📌️
 ---
-Link para [layout](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget)
+Link para [layout](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget) feito no Figma
+Versão [desktop](https://www.figma.com/community/file/1102912516166573468)
+Versão [mobile](https://www.figma.com/community/file/1102912516166573468)
 
 Getting Started! 🚀️
 ---
@@ -113,6 +115,7 @@ Esta API recebe os feedbacks.<br/>Implementa ações com o método POST
 
 http://localhost:3333/feeedbacks
 
+
 Parâmetros | Tipo| Valor
 -----------|-----------|-----------
 type 		        | string  | 'BUG' \| 'IDEA' \| 'OTHER'
@@ -133,8 +136,8 @@ screenshot        | string  | 'data:image/png;base64, '
 
 Deploy 💻️
 ---
-[Feedback Widget Frontend](https://nlw-return-gules.vercel.app)<br/>
-[Feedback Widget Backend](https://nlw-return-production-ca43.up.railway.app)
+[Widget Feedback Frontend](https://nlw-return-gules.vercel.app)<br/>
+[Widget Feedback Backend](https://nlw-return-production-ca43.up.railway.app)
 
 
 Desafios 🏆️
