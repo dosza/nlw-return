@@ -21,8 +21,8 @@ Consulte  *[tutorial](https://efficient-sloth-d85.notion.site/Instalando-o-Node-
 
 Layout 📌️
 ---
-Link para [layout](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget) feito no Figma
-Versão [desktop](https://www.figma.com/community/file/1102912516166573468)
+Link para [layout](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget) feito no Figma<br/>
+Versão [desktop](https://www.figma.com/community/file/1102912516166573468)<br/>
 Versão [mobile](https://www.figma.com/community/file/1102912516166573468)
 
 Getting Started! 🚀️
