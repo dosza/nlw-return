@@ -1,11 +1,9 @@
-Next Level Week Return : trilha impulse
---
 <p align="center">
-    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <img src="https://raw.githubusercontent.com/dosza/nlw-return/main/screenshots/nlw-logo.svg">
 </p>
 
 
-<h1 align="center">Trilha Impulse -Next Level Week Return </h1>
+<h1 align="center">Next Level Week Return </h1>
 
 
 Um Projeto desenvolvido na Semana *[Next Level Week \#8](https://nextlevelweek.com)* da *[Rocketseat](https://rocketseat.com.br/)*
@@ -135,8 +133,8 @@ screenshot        | string  | 'data:image/png;base64, '
 
 Deploy 💻️
 ---
-Link do deploy [Feedback Widget Frontend](https://nlw-return-gules.vercel.app)<br/>
-Link do deploy [Feedback Widget Backend](https://nlw-return-production-ca43.up.railway.app)
+[Feedback Widget Frontend](https://nlw-return-gules.vercel.app)<br/>
+[Feedback Widget Backend](https://nlw-return-production-ca43.up.railway.app)
 
 
 Desafios 🏆️
@@ -146,5 +144,5 @@ Desafios 🏆️
 2.	Substituir o Mailtrap por um serviço de e-mail real,
 3.	Melhorar HTML/CSS do e-mail
 4.	Criar um dashboard de Feedbacks
-	a.	Autenticação com (Firebase/Auth)
+	1.	Autenticação com (Firebase/Auth)
 
