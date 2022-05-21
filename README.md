@@ -95,7 +95,12 @@ user@pc:~$ cd aulas/server
 user@pc:~$ #configuração de dependencias
 user@pc:~$ npm
 user@pc:~$ #Inicialização da aplicação web
-user@pc:~$ npx prisma migrate dev
+user@pc:~$ npm run migrateDev # executa a migração em modo desenvolvimento
+user@pc:~$
+```
+**Dica:** Para executar as *migrations* em produção basta executar:
+ ```bash
+npm run migrateProd
 ```
 ---
 Inicializando o servidor Web

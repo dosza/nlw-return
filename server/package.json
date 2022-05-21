@@ -6,6 +6,8 @@
     "test": "jest",
     "dev": "ts-node-dev src/server.ts",
     "build": "npx tsc",
+    "migrateDev": "npx prisma migrate dev",
+    "migrateProd":"npx prisma migrate deploy",
     "start": "node dist/server.js"
   },
   "license": "MIT",
