@@ -141,7 +141,7 @@ screenshot        | string  | 'data:image/png;base64, '
 
 Deploy 💻️
 ---
-[Widget Feedback Frontend](https://nlw-return-gules.vercel.app)<br/>
+[Widget Feedback Frontend](https://nlw-return-dosza.vercel.app)<br/>
 [Widget Feedback Backend](https://nlw-return-production-ca43.up.railway.app)
 
 
