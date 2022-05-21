@@ -36,7 +36,7 @@ user@pc:~$ git clone https://github.com/dosza/nlw-return
 
 ## Configurando as variáveis de ambiente na aplicação WEB ##
 
-Crie o arquivo .env.local  em aulas/web, nesse arquivo defina a variável *VITE_API_URL="http://localhost:3333"* ou com endereço IP de sua máquina!
+Crie o arquivo .env.local  em [/web](web), nesse arquivo defina a variável *VITE_API_URL="http://localhost:3333"* ou com endereço IP de sua máquina!
 
 ```env
 VITE_API_URL="http://192.168.1.2:3333"
@@ -44,7 +44,7 @@ VITE_API_URL="http://192.168.1.2:3333"
 
 Inicialização da Aplicação Frontend
 ```console
-user@pc:~$ cd aulas/web
+user@pc:~$ cd web
 user@pc:~$ #configuração de dependencias
 user@pc:~$ npm
 user@pc:~$ #Inicialização da aplicação web
@@ -75,7 +75,7 @@ Leia a documentação do [Prisma Scheme](https://pris.ly/d/prisma-schema) para s
 ````
 
 ### Configurando as variáveis de ambiente do projeto ###
-Crie o arquivo .env em aulas/server
+Crie o arquivo .env em [/server](server)
 
 Nesse arquivo deverá conter as variáveis:
 +	DATABASE_URL : endereço do servidor de Banco de Dados
@@ -91,7 +91,7 @@ MAILSERVER_URL="smtp://user:password@smtp.mailtrap.io:2525"
 
 ### Executando as Migrations ###
 ```console
-user@pc:~$ cd aulas/server
+user@pc:~$ cd server
 user@pc:~$ #configuração de dependencias
 user@pc:~$ npm
 user@pc:~$ #Inicialização da aplicação web
@@ -105,7 +105,7 @@ npm run migrateProd
 ---
 Inicializando o servidor Web
 ```console
-user@pc:~$ cd aulas/server
+user@pc:~$ cd server
 user@pc:~$ #Inicialização da aplicação web
 user@pc:~$ npm run dev
 ```
