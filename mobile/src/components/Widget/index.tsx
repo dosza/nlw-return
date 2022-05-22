@@ -14,7 +14,7 @@ import { Success } from '../Success';
 
 export type FeedbackType = keyof typeof feedbackTypes
 
-function Widget() {
+export const Widget = () => {
   const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null)
   const [feedbackSent, setFeedbackSent] = useState(false)
 
