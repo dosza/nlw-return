@@ -7,13 +7,10 @@ services:
     - postgresdb:/var/lib/postgress
     image: postgres
     environment:
-      POSTGRES_USER: $POSTGRES_USER
       POSTGRES_DB: $POSTGRES_DB
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD
     ports:
-      - "5432:5432"
-    expose:
-      - 5432
+      - 5432:5432
   server:
     depends_on:
       - database
@@ -24,8 +21,6 @@ services:
       - 3333:3333
     environment:
       NODE_ENV: $NODE_ENV
-      POSTGRES_USER: $POSTGRES_USER
-      POSTGRESS_PASSWORD: $POSTGRES_PASSWORD
       DATABASE_URL: $DATABASE_DOCKER_URL
       MAILSERVER_URL: $MAILSERVER_URL
     stdin_open: true
