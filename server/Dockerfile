@@ -6,16 +6,15 @@
 
 # Want to help us make this template better? Share your feedback here: https://forms.gle/ybq9Krt8jtBL3iCk7
 
-ARG NODE_VERSION=20
-
-FROM node:${NODE_VERSION}-alpine
+FROM node:lts
 
 # Use production node environment by default.
 ENV NODE_ENV production
-RUN mkdir -p /server
 WORKDIR /server
 COPY  . . 
-RUN npm install
+RUN npm install typescript -Dg
+
+RUN npm run build 
 EXPOSE 3000
 CMD ["npm","migrateProd"]
 CMD [ "npm", "start"]
