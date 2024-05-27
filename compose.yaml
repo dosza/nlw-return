@@ -26,10 +26,10 @@ services:
     stdin_open: true
     tty: true
   web:
+    env_file: ./web/.env.local
     depends_on:
       - server
     build: ./web
-    env_file: ./.env
     restart: on-failure
     ports:
       - 4173:4173
@@ -37,6 +37,7 @@ services:
       - 4173
     environment:
       NODE_ENV: production
+      VITE_API_URL: $VITE_API_URL
     stdin_open: true
     tty: true
 
