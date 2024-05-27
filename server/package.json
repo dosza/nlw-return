@@ -9,7 +9,7 @@
     "migrateDev": "npx prisma migrate dev",
     "migrateProd": "npx prisma migrate deploy",
     "start": "node dist/server.js",
-    "sudoStart":"npm run migrateProd && sleep 1 && npm start"
+    "sudoStart":"echo Please wait ... && sleep 5 && npm run migrateProd && npm start"
   },
   "license": "MIT",
   "devDependencies": {
