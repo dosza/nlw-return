@@ -170,7 +170,7 @@ POSTGRES_SCHEMA=db
 NODE_ENV=production
 ```
 
-3. Crie o arquivo  *.env.local* na pasta *[/web]*(/web)
+3. Crie o arquivo  *.env.local* na pasta */[web](/web)*
 
 ```conf
 VITE_API_URL=http://localhost:3333
