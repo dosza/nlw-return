@@ -151,7 +151,14 @@ Deploy 💻️
 
 Deploy com Docker Compose 💡️
 ---
+O arquivo [compose.yaml](/compose.yaml) configura os seguintes serviços
 
++	PostgreSQL
++	[Server](/server)
++	[Web](/web)
+
+
+## Instruções ##
 1. Instale  o *docker*
 
 ```bash
