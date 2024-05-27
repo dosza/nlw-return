@@ -16,5 +16,4 @@ RUN npm install typescript -Dg
 
 RUN npm run build 
 EXPOSE 3000
-CMD ["npm","migrateProd"]
-CMD [ "npm", "start"]
+CMD ["npm","run","sudoStart"]

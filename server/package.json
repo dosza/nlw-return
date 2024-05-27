@@ -8,7 +8,8 @@
     "build": "npx tsc",
     "migrateDev": "npx prisma migrate dev",
     "migrateProd": "npx prisma migrate deploy",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "sudoStart":"npm run migrateProd && sleep 1 && npm start"
   },
   "license": "MIT",
   "devDependencies": {
