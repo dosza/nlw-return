@@ -24,7 +24,22 @@ services:
       DATABASE_URL: $DATABASE_DOCKER_URL
       MAILSERVER_URL: $MAILSERVER_URL
     stdin_open: true
-    tty: true 
+    tty: true
+  web:
+    depends_on:
+      - server
+    build: ./web
+    env_file: ./.env
+    restart: on-failure
+    ports:
+      - 4173:4173
+    expose:
+      - 4173
+    environment:
+      NODE_ENV: production
+    stdin_open: true
+    tty: true
+
 
 volumes:
   postgresdb:
