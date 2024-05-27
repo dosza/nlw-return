@@ -149,6 +149,39 @@ Deploy 💻️
 [Widget Feedback Frontend](https://nlw-return-dosza.vercel.app)<br/>
 [Widget Feedback Backend](https://nlw-return-production-ca43.up.railway.app)
 
+Deploy com Docker Compose 💡️
+---
+
+1. Instale  o *docker*
+
+```bash
+	sudo apt install docker docker-compose docker-buildx -y
+```
+2. Na raiz do repositório crie um arquivo *.env*
+
+```conf
+MAILSERVER_URL=smtp://user:password@service.com
+POSTGRES_PASSWORD=password
+POSTGRES_DOCKER_PORT=5432
+POSTGRES_LOCAL_PORT=5432
+DATABASE_DOCKER_URL=postgresql://postgres:password@database:5432/nlwreturn_db?schema=db
+POSTGRES_DB=nlwreturn_db
+POSTGRES_SCHEMA=db
+NODE_ENV=production
+```
+
+3. Crie o arquivo  *.env.local* na pasta *[/web]*(/web)
+
+```conf
+VITE_API_URL=http://localhost:3333
+```
+
+4. Execute o projeto
+```bash
+	docker-compose up
+```
+
+5. Acesse a página web em http://localhost:4173
 
 Desafios 🏆️
 ---
