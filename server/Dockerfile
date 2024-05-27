@@ -15,5 +15,5 @@ COPY  . .
 RUN npm install typescript -Dg
 
 RUN npm run build 
-EXPOSE 3000
-CMD ["npm","run","sudoStart"]
+EXPOSE 3333
+CMD ["npm","run","sudoStart"]   
