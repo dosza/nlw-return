@@ -154,8 +154,8 @@ Deploy com Docker Compose 💡️
 O arquivo [compose.yaml](/compose.yaml) configura os seguintes serviços
 
 +	PostgreSQL
-+	[Server](/server)
-+	[Web](/web)
++	*[Server](/server)*
++	*[Web](/web)*
 
 
 ## Instruções ##
@@ -188,7 +188,7 @@ VITE_API_URL=http://localhost:3333
 	docker-compose up
 ```
 
-5. Acesse a página web em http://localhost:4173
+5. Acesse a página web em *http://localhost:4173*
 
 Desafios 🏆️
 ---
