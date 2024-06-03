@@ -151,6 +151,8 @@ Deploy 💻️
 
 Deploy com Docker Compose 💡️
 ---
+**Breaking news**: Agora você pode executar o projeto usando o comando **make**
+
 O arquivo *[compose.yaml](/compose.yaml)* configura os seguintes serviços:
 
 +	PostgreSQL
@@ -162,7 +164,7 @@ O arquivo *[compose.yaml](/compose.yaml)* configura os seguintes serviços:
 1. Instale  o *docker*
 
 ```bash
-	sudo apt install docker docker-compose docker-buildx -y
+	sudo apt install docker docker-compose docker-buildx make -y
 ```
 2. Na raiz do repositório crie um arquivo *.env*
 
@@ -185,11 +187,15 @@ VITE_API_URL=http://localhost:3333
 
 4. Execute o projeto
 ```bash
-	docker-compose up
+	make
 ```
 
 5. Acesse a página web em *http://localhost:4173*
 
+6. Encerrando a execução
+```bash
+	make down
+```
 Desafios 🏆️
 ---
 
